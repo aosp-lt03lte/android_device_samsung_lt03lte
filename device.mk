@@ -76,7 +76,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Gello
 PRODUCT_PACKAGES += \
     Gello \
-    
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8974
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/gps.conf:/system/etc/gps.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf \
@@ -142,13 +146,6 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
-
-# Telephony	
- PRODUCT_PACKAGES += \
-     telephony-ext
-
- PRODUCT_BOOT_JARS += \
-     telephony-ext
 
 # Thermal
 PRODUCT_COPY_FILES += \
