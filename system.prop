@@ -69,3 +69,5 @@ qcom.bluetooth.soc=rome
 # Media
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
+
+ro.device.cache_dir=/data/cache
