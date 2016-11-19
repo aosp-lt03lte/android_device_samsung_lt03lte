@@ -73,10 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secwvk=144 \
     ro.sf.lcd_density=320
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello \
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8974
@@ -91,9 +87,12 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes
 
-# Media profiles
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+    device/samsung/lt03lte/configs/media_profiles.xml:system/etc/media_profiles.xml \
+    device/samsung/lt03lte/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 # MSM IPC Router security configuration
 PRODUCT_COPY_FILES += \
