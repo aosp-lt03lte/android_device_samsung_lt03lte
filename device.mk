@@ -66,6 +66,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8974
 
+TARGET_USES_EXFAT := true
+
+PRODUCT_PACKAGES += \
+	mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hdcp2.rx=tz \
