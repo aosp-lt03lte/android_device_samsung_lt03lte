@@ -71,7 +71,18 @@ TARGET_USES_EXFAT := true
 PRODUCT_PACKAGES += \
 	mount.exfat \
     fsck.exfat \
-    mkfs.exfat
+    libhealthd \
+    mkfs.exfat \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs \
+    mount.exfat \
+    fsck.exfat \
+    e2fsck \
+    mke2fs \
+    tune2fs \
+    mkfs.exfat \
+    charger_res_images
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
